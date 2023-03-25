@@ -45,7 +45,7 @@ namespace Catalog.API.Controllers
             return NotFound();
           
         }
-        [Route("[action]/{category)",Name ="GetProductByCategory")]
+        [Route("[action]/{category})",Name ="GetProductByCategory")]
         [HttpGet]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
